@@ -7,7 +7,7 @@ jobs:
   # Install oc so that it can be used within a 'script' or bash 'task'
   - task: oc-setup@2
     inputs:
-      openshiftService: 'OCS4'
+      openshiftService: 'OCP4'
       version: '3.11.154'
 # A script task making use of 'oc'
   - script: |
