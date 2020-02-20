@@ -8,8 +8,8 @@ jobs:
   - task: oc-setup@2
     inputs:
       openshiftService: 'OCP4'
-      version: '3.11.154'
+      version: '4.4.0'
 # A script task making use of 'oc'
   - script: |
       oc new-project my-project
-      oc apply -f ${SYSTEM_DEFAULTWORKINGDIRECTORY}/openshift/config.yaml -n my-project
+      oc get projects
