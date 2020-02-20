@@ -8,7 +8,7 @@ jobs:
   - task: oc-setup@2
     inputs:
       openshiftService: 'OCP4'
-      version: '4.4.0'
+ #     version: '4.4.0'
 # A script task making use of 'oc'
   - script: |
       oc new-project my-project
